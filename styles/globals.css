@@ -24,3 +24,8 @@ a {
     background: black;
   }
 }
+
+.title {
+  text-align: center;
+  color: red;
+}

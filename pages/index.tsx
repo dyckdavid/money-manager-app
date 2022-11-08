@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div>
-      <h1>Money Managing System</h1>
+      <h1 className='title'>Money Managing System</h1>
     </div>
   )
 }
