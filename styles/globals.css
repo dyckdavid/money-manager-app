@@ -30,6 +30,12 @@ a {
   color: red;
 }
 
+.button {
+  margin-left: 50%;
+  background-color: white;
+}
+
+
 .treedots {
   text-align: center;
 }
