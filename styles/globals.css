@@ -87,6 +87,17 @@ table {
   margin-right: 30px;
 }
 
+@media screen and (max-width: 600px) {
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 93%;
+    font-size: 18%;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
