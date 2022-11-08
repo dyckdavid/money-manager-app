@@ -10,8 +10,7 @@ export default function Home() {
       <Nav></Nav>
       <title>Money-Manager</title>
       <h1 className='title'>Money Managing System</h1>
-      <p className='treedots'>Listing</p>
-      <Link href='/listing' className='button__one'><button>Listings</button></Link>
+      <Link href='/listing' className='button__one'>Listings</Link>
     </div>
   )
 }
