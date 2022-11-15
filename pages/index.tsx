@@ -5,7 +5,8 @@ import Link from "next/link";
 import { ServerStyles, createStylesServer } from '@mantine/next';
 import Button from './components/button'
 import { Center } from '@mantine/core';
-
+import Imagedemo from './components/background'
+import { Space } from '@mantine/core';
 
 
 export default function Home() {
@@ -18,6 +19,9 @@ export default function Home() {
       </Center>
       
       <Button></Button>
+      <Space h="xl" />
+      <Imagedemo></Imagedemo>
+
     </div>
   )
 }

@@ -2,22 +2,18 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Link from "next/link";
-import Tabledemo from '../components/table'
 import { Center } from '@mantine/core';
-import Add from '../components/buttonadd'
+import Form from './formone'
 
 
-
-
-export default function Listings() {
+export default function Adding() {
   return (
     <div>
         
       <title>Listings - Money-Manager</title>
-      <Center><h1 className='title'>Listings</h1></Center>
+      <Center><h1 className='title'>Add</h1></Center>
 
-      <Tabledemo></Tabledemo>
-      <Add></Add>
+      <Form></Form>
 
     </div>
   )
