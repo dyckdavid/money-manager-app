@@ -3,8 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from "next/link";
 import { ServerStyles, createStylesServer } from '@mantine/next';
-import Nav from "./components/nav.js"
-import Button from "./components/button"
+import Button from './components/button'
+
 
 
 export default function Home() {
