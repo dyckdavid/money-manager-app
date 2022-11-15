@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Link from "next/link";
+import Tabledemo from '../components/table'
+import { Center } from '@mantine/core';
 
 
 
@@ -10,33 +12,10 @@ export default function Listings() {
     <div>
         
       <title>Listings - Money-Manager</title>
-      <h1 className='title'>Listings</h1>
-      <p className='treedots'>...</p>
+      <Center><h1 className='title'>Listings</h1></Center>
 
-      <table>
-  <tr>
-    <th>Date</th>
-    <th>Description</th>
-    <th>Income</th>
-    <th>Expense</th>
-    <th>Action</th>
-  </tr>
-  <tr>
-    <td>08/11/2022</td>
-    <td>iCloud Payment</td>
-    <td>$0.00</td>
-    <td>$49.00</td>
-    <td>Edit/Delete</td>
-  </tr>
-  <tr>
-    <td>08/11/2022</td>
-    <td>Web Development</td>
-    <td>$500.00</td>
-    <td>$0.00</td>
-    <td>Edit/Delete</td>
-  </tr>
-  <tr></tr>
-  </table>
+      <Tabledemo></Tabledemo>
+
     </div>
   )
 }
