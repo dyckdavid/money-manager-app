@@ -10,7 +10,7 @@ function Home() {
     <Center>
         <Space h="xl" />
     <Link href="/">
-    <Button radius="lg" size="md">
+    <Button radius="lg" size="md" color="red">
       Home
     </Button>
     </Link>
