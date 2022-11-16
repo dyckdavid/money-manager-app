@@ -7,7 +7,7 @@ import Button from './components/button'
 import { Center } from '@mantine/core';
 import Imagedemo from './components/background'
 import { Space } from '@mantine/core';
-
+import Homebutton from './components/homebutton'
 
 export default function Home() {
   return (

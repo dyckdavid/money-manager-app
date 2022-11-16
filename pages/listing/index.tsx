@@ -5,7 +5,7 @@ import Link from "next/link";
 import Tabledemo from '../components/table'
 import { Center } from '@mantine/core';
 import Add from '../components/buttonadd'
-
+import Homebutton from '../components/homebutton'
 
 
 
@@ -14,6 +14,7 @@ export default function Listings() {
     <div>
         
       <title>Listings - Money-Manager</title>
+      <Center><Homebutton></Homebutton></Center>
       <Center><h1 className='title'>Listings</h1></Center>
 
       <Tabledemo></Tabledemo>
