@@ -1,4 +1,26 @@
 import { Table } from '@mantine/core';
+import { createStyles } from '@mantine/core';
+
+const useStyles = createStyles((theme) => ({
+    container: {
+      height: 100,
+      width: 350,
+  
+      // Media query with value from theme
+      [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
+          width: 1000,
+        
+      },
+  
+      // Static media query
+      '@media (max-width: 800px)': {
+        width: 460,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+      },
+    },
+  }));
+  
 
 const elements = [
     { position: 1, mass: 12.011, symbol: '00.00', name: 'iCloud' },
@@ -9,6 +31,7 @@ const elements = [
   ];
 
 function Tabledemo() {
+    const { classes } = useStyles();
   const rows = elements.map((element) => (
     <tr key={element.name}>
       <td>{element.position}</td>
@@ -19,7 +42,7 @@ function Tabledemo() {
   ));
 
   return (
-    <Table style={{ width: 1200, marginLeft: 'auto', marginRight: 'auto' }}>
+    <Table style={{ marginLeft: 'auto', marginRight: 'auto' }} className={classes.container}>
       <thead>
         <tr>
           <th>ID</th>
