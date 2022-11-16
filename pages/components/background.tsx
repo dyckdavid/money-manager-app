@@ -14,7 +14,7 @@ const useStyles = createStyles((theme) => ({
 
     // Static media query
     '@media (max-width: 800px)': {
-      width: 300,
+      width: 460,
     },
   },
 }));

@@ -19,7 +19,7 @@ function Tabledemo() {
   ));
 
   return (
-    <Table>
+    <Table style={{ width: 1200, marginLeft: 'auto', marginRight: 'auto' }}>
       <thead>
         <tr>
           <th>ID</th>
