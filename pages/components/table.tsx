@@ -18,6 +18,13 @@ const useStyles = createStyles((theme) => ({
         marginLeft: 'auto',
         marginRight: 'auto',
       },
+
+      // Static media query iphone 13 mini
+      '@media (max-width: 600px)': {
+        width: 400,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+      },
     },
   }));
   
