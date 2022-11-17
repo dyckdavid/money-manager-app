@@ -21,7 +21,8 @@ export default function Home() {
       <Button></Button>
       <Space h="xl" />
       <Imagedemo></Imagedemo>
-
+      <Space h="xl" />
+      <Center><h1 className='title'>David Dyck</h1></Center>
     </div>
   )
 }
