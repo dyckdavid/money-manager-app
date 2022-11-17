@@ -1,5 +1,6 @@
 import { Table } from '@mantine/core';
 import { createStyles } from '@mantine/core';
+import { Space } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
     container: {
@@ -33,7 +34,7 @@ const elements = [
     { position: 1, mass: 12.011, symbol: '00.00', name: 'iCloud' },
     { position: 2, mass: 14.007, symbol: '10.00', name: 'Web Development' },
     { position: 3, mass: 88.906, symbol: '12.45', name: 'MacBook Pro M1 Max' },
-    { position: 4, mass: 137.33, symbol: '08.76', name: 'iPhone 14 Pro Max' },
+    { position: 4, mass: 137.33, symbol: '08.76', name: 'iPhone 14 Pro' },
     { position: 5, mass: 140.12, symbol: '13.55', name: 'Air Pods Pro (2)' },
   ];
 
@@ -47,8 +48,10 @@ function Tabledemo() {
       <td>{element.mass}</td>
     </tr>
   ));
+  <Space h="xl" />
 
   return (
+    
     <Table style={{ marginLeft: 'auto', marginRight: 'auto' }} className={classes.container} striped highlightOnHover withBorder>
       <thead>
         <tr>
