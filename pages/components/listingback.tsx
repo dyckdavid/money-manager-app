@@ -8,7 +8,7 @@ function Listingback() {
   return (
     <Center>
     <Link href="../listing">
-    <Button radius="xl" size="xs">
+    <Button radius="lg" size="xs">
     Back
     </Button>
     </Link>
