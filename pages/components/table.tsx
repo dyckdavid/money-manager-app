@@ -23,7 +23,7 @@ const useStyles = createStyles((theme) => ({
       '@media (max-width: 600px)': {
         width: 400,
         marginLeft: 'auto',
-        marginRight: 'auto',
+        marginRight: 2,
       },
     },
   }));
