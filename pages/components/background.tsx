@@ -29,7 +29,7 @@ function Imagedemo() {
   return (
     <div style={{ marginLeft: 'auto', marginRight: 'auto' }} className={classes.container}>
       <Image
-        radius="sm"
+        radius="lg"
         src="https://thewebappmarket.com/wp-content/uploads/2021/07/Money-View-Money-Manager-App-Logo.png"
         alt="Logo"
       />

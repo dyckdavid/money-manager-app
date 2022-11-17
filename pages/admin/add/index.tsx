@@ -6,19 +6,21 @@ import { Center } from '@mantine/core';
 import Form from './formone'
 import Homebutton from '../../components/homebutton'
 import { Space } from '@mantine/core';
-import Listingback from '../../components/listingback'
+import Listingback from '../../components/listingback';
+import Nav from '../../components/navbar'
 
 export default function Adding() {
   return (
     <div>
         
       <title>Listings - Money-Manager</title>
+      <Nav></Nav>
       <Space h="xl" />
-      <Center>
+      
         <Listingback></Listingback>
         <Space w="md" />
-        <Homebutton></Homebutton>
-      </Center>
+        
+      
       <Center><h1 className='title'>ADD</h1></Center>
 
       <Form></Form>

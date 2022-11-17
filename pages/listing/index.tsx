@@ -7,6 +7,7 @@ import { Center } from '@mantine/core';
 import Add from '../components/buttonadd'
 import Homebutton from '../components/homebutton'
 import { Space } from '@mantine/core';
+import Nav from '../components/navbar'
 
 
 export default function Listings() {
@@ -14,8 +15,9 @@ export default function Listings() {
     <div>
         
       <title>Listings - Money-Manager</title>
+      <Nav></Nav>
       <Space h="xl" />
-      <Center><Homebutton></Homebutton></Center>
+      
       <Center><h1 className='title'>Listings</h1></Center>
 
       <Tabledemo></Tabledemo>

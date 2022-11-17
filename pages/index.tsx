@@ -8,17 +8,18 @@ import { Center } from '@mantine/core';
 import Imagedemo from './components/background'
 import { Space } from '@mantine/core';
 import Homebutton from './components/homebutton'
+import Nav from './components/navbar'
 
 export default function Home() {
   return (
     <div>
       
       <title>Money-Manager</title>
+      <Nav></Nav>
       <Center>
       <h1 className='title'>Money Managing System</h1>
       </Center>
       
-      <Button></Button>
       <Space h="xl" />
       <Imagedemo></Imagedemo>
       <Space h="xl" />
