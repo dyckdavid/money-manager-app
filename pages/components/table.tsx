@@ -42,7 +42,7 @@ function Tabledemo() {
   ));
 
   return (
-    <Table style={{ marginLeft: 'auto', marginRight: 'auto' }} className={classes.container}>
+    <Table style={{ marginLeft: 'auto', marginRight: 'auto' }} className={classes.container} striped highlightOnHover withBorder>
       <thead>
         <tr>
           <th>ID</th>
