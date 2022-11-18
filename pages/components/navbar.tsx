@@ -34,17 +34,17 @@ function Demo() {
   return (
     <Center>
         <Link href="/">
-    <Button radius="sm" size="xs" className={classes.container}>
+    <Button radius="sm" size="xs" color="gray" className={classes.container}>
       Home
     </Button>
     </Link>
     <Link href="/listing">
-    <Button radius="sm" size="xs" className={classes.container}>
+    <Button radius="sm" size="xs" color="gray" className={classes.container}>
       Listings
     </Button>
     </Link>
     <Link href="/admin/add">
-    <Button radius="sm" size="xs" className={classes.container}>
+    <Button radius="sm" size="xs" color="gray" className={classes.container}>
       Add
     </Button>
     </Link>

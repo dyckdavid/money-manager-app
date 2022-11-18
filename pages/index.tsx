@@ -9,6 +9,8 @@ import Imagedemo from './components/background'
 import { Space } from '@mantine/core';
 import Homebutton from './components/homebutton'
 import Nav from './components/navbar'
+import Progress from './components/ringprogress'
+
 
 export default function Home() {
   return (
@@ -21,7 +23,8 @@ export default function Home() {
       </Center>
       
       <Space h="xl" />
-      <Imagedemo></Imagedemo>
+      <Progress></Progress>
+      
       <Space h="xl" />
       <Center><h1 className='title'>David Dyck</h1></Center>
     </div>
