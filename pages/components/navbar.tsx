@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Center } from '@mantine/core';
 import { createStyles } from '@mantine/core';
 import { Space } from '@mantine/core';
+import { Container } from '@mantine/core';
 
 import Burger from './navburger'
 import { redirect } from 'next/dist/server/api-utils';
@@ -32,6 +33,8 @@ const useStyles = createStyles((theme) => ({
 function Demo() {
     const { classes } = useStyles();
   return (
+    <>
+    
     <Center>
         <Link href="/">
     <Button radius="sm" size="xs" color="gray" className={classes.container}>
@@ -49,6 +52,7 @@ function Demo() {
     </Button>
     </Link>
     </Center>
+    </>
   );
 }
 

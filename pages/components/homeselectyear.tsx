@@ -17,7 +17,7 @@ function Yearselect() {
   return (
     <NativeSelect
     className={classes.container}
-      data={['2019', '2020', '2021', '2022']}
+      data={['2022', '2021', '2020', '2019']}
       description="Year"
       variant="filled"
       radius="lg"
