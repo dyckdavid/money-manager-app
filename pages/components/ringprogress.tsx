@@ -7,8 +7,8 @@ export default function ringprogress() {
         size={250}
         thickness={16}
         label={
-          <Text size="xs" align="center" px="xs" sx={{ pointerEvents: 'none' }}>
-            Hover sections to see tooltips
+          <Text size="xl" align="center" px="xs" sx={{ pointerEvents: 'none' }}>
+            2022
           </Text>
         }
         sections={[

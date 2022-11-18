@@ -10,9 +10,16 @@ import { Space } from '@mantine/core';
 import Homebutton from './components/homebutton'
 import Nav from './components/navbar'
 import Progress from './components/ringprogress'
+import Yearselect from './components/homeselectyear'
+import { createStyles } from '@mantine/core';
+
+
+
+
 
 
 export default function Home() {
+  
   return (
     <div>
       
@@ -21,7 +28,8 @@ export default function Home() {
       <Center>
       <h1 className='title'>Money Managing System</h1>
       </Center>
-      
+      <Space h="xl" />
+      <Center><Yearselect></Yearselect></Center>
       <Space h="xl" />
       <Progress></Progress>
       

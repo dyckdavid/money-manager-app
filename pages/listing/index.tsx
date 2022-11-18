@@ -21,6 +21,7 @@ export default function Listings() {
       <Center><h1 className='title'>Listings</h1></Center>
 
       <Tabledemo></Tabledemo>
+      <Space h="xl" />
       <Add></Add>
 
     </div>
