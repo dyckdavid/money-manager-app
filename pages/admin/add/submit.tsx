@@ -7,7 +7,7 @@ function Demo() {
     <Center>
     <Link href="../admin/add">
     <Button radius="lg" size="xl">
-      Submit
+      SUBMIT
     </Button>
     </Link>
     </Center>

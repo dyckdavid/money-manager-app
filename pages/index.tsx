@@ -26,7 +26,7 @@ export default function Home() {
       <title>Money-Manager</title>
       <Nav></Nav>
       <Center>
-      <h1 className='title'>Money Managing System</h1>
+      <h1 className='title'>Money Managing APP</h1>
       </Center>
       <Space h="xl" />
       <Center><Yearselect></Yearselect></Center>

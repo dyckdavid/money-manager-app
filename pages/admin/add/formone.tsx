@@ -7,6 +7,10 @@ function Demo() {
     return (
       <><TextInput
       style={{ width: 400, marginLeft: 'auto', marginRight: 'auto' }}
+            placeholder="Name"
+            label="Enter your Name"
+            withAsterisk /><Space h="xl" /><TextInput
+      style={{ width: 400, marginLeft: 'auto', marginRight: 'auto' }}
             placeholder="Decription"
             label="Full Description"
             withAsterisk /><Space h="xl" /><DatePicker style={{ width: 400, marginLeft: 'auto', marginRight: 'auto' }} placeholder="Pick date" label="Date" withAsterisk /><Space h="xl" /><NumberInput
