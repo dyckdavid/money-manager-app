@@ -12,9 +12,9 @@ export default function ringprogress() {
           </Text>
         }
         sections={[
-          { value: 40, color: 'cyan', tooltip: 'iCloud – 40 Gb' },
-          { value: 25, color: 'orange', tooltip: 'Apple – 25 Gb' },
-          { value: 15, color: 'grape', tooltip: 'Other – 15 Gb' },
+          { value: 15, color: 'cyan', tooltip: 'iCloud' },
+          { value: 50, color: 'orange', tooltip: 'Apple' },
+          { value: 29, color: 'grape', tooltip: 'Other' },
         ]}
       />
     </Group>
