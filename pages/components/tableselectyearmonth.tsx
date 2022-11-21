@@ -1,5 +1,6 @@
 import { NativeSelect } from '@mantine/core';
 import { createStyles } from '@mantine/core';
+import { Space } from '@mantine/core';
 
 
 const useStyles = createStyles((theme) => ({
@@ -23,7 +24,7 @@ function Yearmonthselect() {
       radius="lg"
       size="xl"
       withAsterisk
-    /><NativeSelect
+    /><Space w="xl" /><NativeSelect
     className={classes.container}
       data={['2022', '2021', '2020', '2019']}
       description="Year"
