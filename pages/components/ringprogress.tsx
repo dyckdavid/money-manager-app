@@ -3,7 +3,7 @@ import { RingProgress, Text, Group } from '@mantine/core';
 
 
 const elements = [
-  { position: 1, mass: 12.011, symbol: '00.00', name: 'iCloud' },
+  { position: 1, year: 2022, mass: 12.011, symbol: '00.00', name: 'iCloud' },
   
 ];
 
@@ -11,6 +11,7 @@ const elements = [
 
 function ringprogress() {
   const rows = elements.map((element) => (
+    
     <p key={element.name}>
       <td>{element.name}</td>
     </p>
