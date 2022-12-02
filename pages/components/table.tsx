@@ -4,6 +4,9 @@ import { Space } from '@mantine/core';
 import { collection, DocumentData, getDocs } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import { db } from '../../firebase/clientApp';
+import { Center } from '@mantine/core';
+import { Loader } from '@mantine/core';
+
 
 const useStyles = createStyles((theme) => ({
     container: {
@@ -53,7 +56,7 @@ function Tabledemo() {
     }, []);
 
     if (data.length === 0) {
-        return <div>Loading...</div>;
+        return <Center><Loader size="xl" /></Center>;
     }
 
     return (<Table style={{ marginLeft: 'auto', marginRight: 'auto' }} className={classes.container} striped highlightOnHover withBorder>

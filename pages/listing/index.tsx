@@ -18,9 +18,9 @@ export default function Listings() {
       <title>Listings - Money-Manager</title>
       <Nav></Nav>
       <Space h="xl" />
-      <Center><Yearmonthselect></Yearmonthselect></Center>
-      
       <Center><h1 className='title'>Listings</h1></Center>
+      <Center><Yearmonthselect></Yearmonthselect></Center>
+      <Space h="xl" />
 
       <Tabledemo></Tabledemo>
       <Space h="xl" />
