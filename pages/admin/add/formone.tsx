@@ -12,6 +12,8 @@ import {
   } from "firebase/firestore";
   import { db } from "../../../firebase/clientApp";
   import { useForm } from "@mantine/form";
+  import { Loader } from '@mantine/core';
+
 
   function Demo() {
     const form = useForm({
@@ -25,7 +27,8 @@ import {
     });
 
     async function handleSubmit(values: typeof form["values"]) {
-      await addDoc(collection(db, "users"), values);
+      await addDoc(collection(db, "users"), values) && <Loader></Loader>;
+      
     }
 
    
@@ -76,7 +79,7 @@ import {
               {...form.getInputProps("expense")}
             />
             <Space h="xl" />
-            <Button type="submit">Submit</Button>
+            <Button type="submit" >Submit</Button>
           </Flex>
         </form>
       </>
