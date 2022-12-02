@@ -67,7 +67,7 @@ function Tabledemo() {
       </thead>
         <tbody>
             {data.map((item: DocumentData) => (
-                <tr>
+                <tr key={item.id}>
                 <th>{item.id}</th>
                 <th>{item.description}</th>
                 <th>{item.income}</th>
@@ -80,3 +80,8 @@ function Tabledemo() {
 }
 
 export default Tabledemo;
+
+// Function that takes a string, checks if it contains a number, and returns a boolean
+function containsNumber(str: string) {
+    return /\d/.test(str);
+    }
