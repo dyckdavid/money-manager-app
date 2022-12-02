@@ -70,7 +70,6 @@ function Tabledemo() {
                 <tr key={item.id}>
                 <th>{item.id}</th>
                 <th>{item.description}</th>
-                <th>{item.date}</th>
                 <th>{item.income}</th>
                 <th>{item.expense}</th>
                 </tr>
