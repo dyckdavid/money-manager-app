@@ -68,8 +68,9 @@ function Tabledemo() {
         <tbody>
             {data.map((item: DocumentData) => (
                 <tr key={item.id}>
-                <th>{item.date}</th>
+                <th>{item.id}</th>
                 <th>{item.description}</th>
+                <th>{item.date}</th>
                 <th>{item.income}</th>
                 <th>{item.expense}</th>
                 </tr>
