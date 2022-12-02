@@ -1,18 +1,21 @@
 import { Table } from '@mantine/core';
 import { createStyles } from '@mantine/core';
 import { Space } from '@mantine/core';
+import { collection, DocumentData, getDocs } from 'firebase/firestore';
+import { useEffect, useState } from 'react';
+import { db } from '../../firebase/clientApp';
 
 const useStyles = createStyles((theme) => ({
     container: {
       height: 100,
       width: 350,
-  
+
       // Media query with value from theme
       [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
           width: 1000,
-        
+
       },
-  
+
       // Static media query
       '@media (max-width: 800px)': {
         width: 420,
@@ -28,7 +31,7 @@ const useStyles = createStyles((theme) => ({
       },
     },
   }));
-  
+
 
 const elements = [
     { position: 1, mass: 12.011, symbol: '00.00', name: 'iCloud' },
@@ -40,19 +43,20 @@ const elements = [
 
 function Tabledemo() {
     const { classes } = useStyles();
-  const rows = elements.map((element) => (
-    <tr key={element.name}>
-      <td>{element.position}</td>
-      <td>{element.name}</td>
-      <td>{element.symbol}</td>
-      <td>{element.mass}</td>
-    </tr>
-  ));
-  <Space h="xl" />
+    const [data, setData] = useState<DocumentData>([]);
 
-  return (
-    
-    <Table style={{ marginLeft: 'auto', marginRight: 'auto' }} className={classes.container} striped highlightOnHover withBorder>
+    useEffect(() => {
+        getDocs(collection(db, "users")).then((querySnapshot) => {
+            const items = querySnapshot.docs.map((doc) => doc.data());
+            setData(items);
+        });
+    }, []);
+
+    if (data.length === 0) {
+        return <div>Loading...</div>;
+    }
+
+    return (<Table style={{ marginLeft: 'auto', marginRight: 'auto' }} className={classes.container} striped highlightOnHover withBorder>
       <thead>
         <tr>
           <th>ID</th>
@@ -61,9 +65,23 @@ function Tabledemo() {
           <th>Expense</th>
         </tr>
       </thead>
-      <tbody>{rows}</tbody>
+        <tbody>
+            {data.map((item: DocumentData) => (
+                <tr key={item.id}>
+                <th>{item.id}</th>
+                <th>{item.description}</th>
+                <th>{item.income}</th>
+                <th>{item.expense}</th>
+                </tr>
+            ))}
+        </tbody>
     </Table>
   );
 }
 
 export default Tabledemo;
+
+// Function that takes a string, checks if it contains a number, and returns a boolean
+function containsNumber(str: string) {
+    return /\d/.test(str);
+    }
