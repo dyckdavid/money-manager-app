@@ -15,10 +15,10 @@ export default function Listings() {
   return (
     <div>
         
-      <title>Listings - Money-Manager</title>
+      <title>Manager  Money-Manager</title>
       <Nav></Nav>
       <Space h="xl" />
-      <Center><h1 className='title'>Listings</h1></Center>
+      <Center><h1 className='title'>Manager</h1></Center>
       <Center><Yearmonthselect></Yearmonthselect></Center>
       <Space h="xl" />
 

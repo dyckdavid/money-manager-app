@@ -49,7 +49,7 @@ function Demo() {
           </Link>
           <Link href="/listing">
             <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
-              Listings
+              Manager
             </Button>
           </Link>
           <Link href="/dashboard">
