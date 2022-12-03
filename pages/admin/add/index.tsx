@@ -23,7 +23,7 @@ export default function Adding() {
       
       <Center><h1 className='title'>ADD LISTING</h1></Center>
 
-      <Form></Form>
+      
 
     </div>
   )

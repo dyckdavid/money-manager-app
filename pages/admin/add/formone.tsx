@@ -33,10 +33,16 @@ import { useState } from "react";
     
 
     async function handleSubmit(values: typeof form["values"]) {
-      await addDoc(collection(db, "users"), values) && <Loader></Loader>;
-
+      await addDoc(collection(db, "users"), values);
 
       
+
+      
+    }
+
+    if (!form) {
+      alert('Please enter your name.')
+      return false
     }
    
 
@@ -55,7 +61,7 @@ import { useState } from "react";
             <TextInput
               style={{ width: 400, marginLeft: "auto", marginRight: "auto" }}
               placeholder="Decription"
-              label="Full Description"
+              label="Your Description"
               withAsterisk
               {...form.getInputProps("description")}
             />
@@ -72,7 +78,7 @@ import { useState } from "react";
               style={{ width: 400, marginLeft: "auto", marginRight: "auto" }}
               placeholder="Income"
               defaultValue={10}
-              label="Full Income"
+              label="Income"
               withAsterisk
               {...form.getInputProps("income")}
             />
@@ -81,7 +87,7 @@ import { useState } from "react";
               style={{ width: 400, marginLeft: "auto", marginRight: "auto" }}
               placeholder="Expense"
               defaultValue={0}
-              label="Full Expense"
+              label="Expense"
               withAsterisk
               {...form.getInputProps("expense")}
             />

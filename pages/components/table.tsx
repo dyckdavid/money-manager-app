@@ -49,7 +49,7 @@ function Tabledemo() {
     const [data, setData] = useState<DocumentData>([]);
 
     useEffect(() => {
-        getDocs(collection(db, "users")).then((querySnapshot) => {
+        getDocs(collection(db, "manager")).then((querySnapshot) => {
             const items = querySnapshot.docs.map((doc) => doc.data());
             setData(items);
         });

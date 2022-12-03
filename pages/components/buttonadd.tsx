@@ -5,7 +5,7 @@ import { Center } from '@mantine/core';
 function Demo() {
   return (
     <Center>
-    <Link href="../admin/add">
+    <Link href="/add">
     <Button radius="md" size="xl" compact>
       ADD LISTING
     </Button>
