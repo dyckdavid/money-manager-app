@@ -56,7 +56,7 @@ function Tabledemo() {
     }, []);
 
     if (data.length === 0) {
-        return <Center><Loader size="xl" /></Center>;
+        return <Center><Loader size={150} /></Center>;
     }
 
     return (<Table style={{ marginLeft: 'auto', marginRight: 'auto' }} className={classes.container} striped highlightOnHover withBorder>
