@@ -20,11 +20,24 @@ export default function Listings() {
       <Space h="xl" />
       <Center><h1 className='title'>DASHBOARD</h1></Center>
       <Space h="xl" />
-      <Center><h3>Total $253.00</h3></Center>
-      <Center><h3>Income: $233.00</h3><Space w="xl"/><h3>Expense: $20.00</h3></Center>
+      <Center><h2 className='total'>Total $253.00</h2></Center>
+      <Center><h3 className='income'>Income: $233.00</h3><Space w="xl"/><h3 className='expense'>Expense: $20.00</h3></Center>
 
       
-
+      <style jsx>{`
+        .total {
+          color: white;
+        }
+        .income {
+            color: green;
+        }
+        .expense {
+            color: red;
+        }
+        p {
+          color: blue;
+        }
+      `}</style>
     </div>
   )
 }
