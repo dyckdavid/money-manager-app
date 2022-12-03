@@ -42,7 +42,6 @@ function Demo() {
       
      
     <Center>
-    <h1>LOGO</h1><Space w="xl" />
         <Link href="/">
     <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
       Home
