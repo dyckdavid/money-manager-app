@@ -63,7 +63,7 @@ function Demo() {
 
         .nav__bar__div {
           background-color: grey;
-          border-bottom: 3px groove black;
+          border-bottom: 2px solid black;
           padding-bottom: 10px;
         }
       `}</style></>

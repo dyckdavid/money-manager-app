@@ -8,6 +8,8 @@ import Add from '../components/buttonadd'
 import Homebutton from '../components/homebutton'
 import { Space } from '@mantine/core';
 import Nav from '../components/navbar'
+import Yearselect from '../components/homeselectyear';
+import Progress from '../../pages/components/ringprogress'
 
 
 export default function Listings() {
@@ -23,6 +25,11 @@ export default function Listings() {
       <Center><h2 className='total'>Total $253.00</h2></Center>
       <Center><h3 className='income'>Income: $233.00</h3><Space w="xl"/><h3 className='expense'>Expense: $20.00</h3></Center></div></Center>
 
+
+      <Space h="xl" />
+      <Center><Yearselect></Yearselect></Center>
+      <Space h="xl" />
+      <Progress></Progress>
       
       <style jsx>{`
 

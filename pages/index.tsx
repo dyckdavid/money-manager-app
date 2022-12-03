@@ -28,13 +28,10 @@ export default function Home() {
       <Center>
       <h1 className='title'>Money Managing APP</h1>
       </Center>
-      <Space h="xl" />
-      <Center><Yearselect></Yearselect></Center>
-      <Space h="xl" />
-      <Progress></Progress>
+      
       
       <Space h="xl" />
-      <Center><h1 className='title'>username</h1></Center>
+      <Center><h1 className='title'>Welcome (username)</h1></Center>
     </div>
   )
 }
