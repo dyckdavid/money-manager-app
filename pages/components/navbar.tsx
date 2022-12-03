@@ -37,29 +37,36 @@ const useStyles = createStyles((theme) => ({
 function Demo() {
     const { classes } = useStyles();
   return (
-    <>
-    <div className='nav__bar__div'>
-      
-     
-    <Center>
-        <Link href="/">
-    <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
-      Home
-    </Button>
-    </Link>
-    <Link href="/listing">
-    <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
-      Listings
-    </Button>
-    </Link>
-    <Link href="/dashboard">
-    <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
-      Dashboard
-    </Button>
-    </Link>
-    
-    </Center></div>
-    </>
+    <><>
+      <div className='nav__bar__div'>
+
+
+        <Center>
+          <Link href="/">
+            <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
+              Home
+            </Button>
+          </Link>
+          <Link href="/listing">
+            <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
+              Listings
+            </Button>
+          </Link>
+          <Link href="/dashboard">
+            <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
+              Dashboard
+            </Button>
+          </Link>
+
+        </Center></div>
+    </><style jsx>{`
+
+        .nav__bar__div {
+          background-color: grey;
+          border-bottom: 3px groove black;
+          padding-bottom: 10px;
+        }
+      `}</style></>
   );
 }
 
