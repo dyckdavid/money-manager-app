@@ -20,8 +20,8 @@ export default function Listings() {
       <Space h="xl" />
       <Center><h1 className='title'>DASHBOARD</h1></Center>
       <Space h="xl" />
-      <Center><h1>Total $100.00</h1></Center>
-      <Center><h1>Income: $90.00</h1><Space w="xl"/><h1>Expense: $10.00</h1></Center>
+      <Center><h3>Total $100.00</h3></Center>
+      <Center><h3>Income: $90.00</h3><Space w="xl"/><h3>Expense: $10.00</h3></Center>
 
       
 
