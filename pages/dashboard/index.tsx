@@ -20,13 +20,22 @@ export default function Listings() {
       <Space h="xl" />
       <Center><h1 className='title'>DASHBOARD</h1></Center>
       <Space h="xl" />
+      <Center><div className='container'>
       <Center><h2 className='total'>Total $253.00</h2></Center>
-      <Center><h3 className='income'>Income: $233.00</h3><Space w="xl"/><h3 className='expense'>Expense: $20.00</h3></Center>
+      <Center><h3 className='income'>Income: $233.00</h3><Space w="xl"/><h3 className='expense'>Expense: $20.00</h3></Center></div></Center>
 
       
       <style jsx>{`
+
         .total {
           color: white;
+        }
+        .container {
+            border-radius: 20px;
+            border: 3px solid black;
+            width: 78%;
+            height: auto;
+            background-color: #696969;
         }
         .income {
             color: green;
