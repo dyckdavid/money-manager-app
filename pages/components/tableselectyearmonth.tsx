@@ -19,18 +19,18 @@ function Yearmonthselect() {
     <><NativeSelect
     className={classes.container}
       data={['November', 'October', 'September', 'August', 'July', 'June', 'May', 'April', 'March' , 'Febuary', 'January']}
-      description="Month"
+      description="Select Month"
       variant="filled"
       radius="lg"
-      size="xl"
+      size="lg"
       withAsterisk
     /><Space w="xl" /><NativeSelect
     className={classes.container}
       data={['2022', '2021', '2020', '2019']}
-      description="Year"
+      description="Select Year"
       variant="filled"
       radius="lg"
-      size="xl"
+      size="lg"
       withAsterisk
     /></>
   );

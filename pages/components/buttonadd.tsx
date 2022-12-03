@@ -6,8 +6,8 @@ function Demo() {
   return (
     <Center>
     <Link href="../admin/add">
-    <Button radius="lg" size="xl">
-      Add
+    <Button radius="md" size="xl" compact>
+      ADD LISTING
     </Button>
     </Link>
     </Center>

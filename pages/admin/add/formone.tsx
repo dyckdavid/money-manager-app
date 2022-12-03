@@ -13,6 +13,7 @@ import {
   import { db } from "../../../firebase/clientApp";
   import { useForm } from "@mantine/form";
   import { Loader } from '@mantine/core';
+import { useState } from "react";
 
 
   function Demo() {
@@ -26,11 +27,17 @@ import {
       },
     });
 
+    function Loaddata() {
+      <Loader></Loader>
+    }
+    
+
     async function handleSubmit(values: typeof form["values"]) {
       await addDoc(collection(db, "users"), values) && <Loader></Loader>;
+
+
       
     }
-
    
 
     return (
@@ -79,7 +86,7 @@ import {
               {...form.getInputProps("expense")}
             />
             <Space h="xl" />
-            <Button type="submit" >Submit</Button>
+            <Button type="submit" onClick={Loaddata}>Submit</Button>
           </Flex>
         </form>
       </>

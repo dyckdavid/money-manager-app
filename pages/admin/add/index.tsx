@@ -21,7 +21,7 @@ export default function Adding() {
         <Space w="md" />
         
       
-      <Center><h1 className='title'>ADD</h1></Center>
+      <Center><h1 className='title'>ADD LISTING</h1></Center>
 
       <Form></Form>
 

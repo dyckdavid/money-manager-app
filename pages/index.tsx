@@ -34,7 +34,7 @@ export default function Home() {
       <Progress></Progress>
       
       <Space h="xl" />
-      <Center><h1 className='title'>David Dyck</h1></Center>
+      <Center><h1 className='title'>username</h1></Center>
     </div>
   )
 }

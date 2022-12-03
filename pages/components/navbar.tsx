@@ -8,6 +8,8 @@ import { Container } from '@mantine/core';
 import Burger from './navburger'
 import { redirect } from 'next/dist/server/api-utils';
 
+
+
 const useStyles = createStyles((theme) => ({
     container: {
       height: 35,
@@ -26,6 +28,8 @@ const useStyles = createStyles((theme) => ({
       '@media (max-width: 800px)': {
         
       },
+
+
     },
   }));
   
@@ -34,24 +38,28 @@ function Demo() {
     const { classes } = useStyles();
   return (
     <>
-    
+    <div className='nav__bar__div'>
+      
+     
     <Center>
+    <h1>LOGO</h1><Space w="xl" />
         <Link href="/">
-    <Button radius="sm" size="xs" color="gray" className={classes.container}>
+    <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
       Home
     </Button>
     </Link>
     <Link href="/listing">
-    <Button radius="sm" size="xs" color="gray" className={classes.container}>
+    <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
       Listings
     </Button>
     </Link>
-    <Link href="/admin/add">
-    <Button radius="sm" size="xs" color="gray" className={classes.container}>
-      Add
+    <Link href="/dashboard">
+    <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
+      Dashboard
     </Button>
     </Link>
-    </Center>
+    
+    </Center></div>
     </>
   );
 }

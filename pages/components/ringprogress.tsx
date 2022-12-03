@@ -30,9 +30,9 @@ function ringprogress() {
           </Text>
         }
         sections={[
-          { value: 15, color: 'cyan', tooltip: <p>{rows}</p> },
+          { value: 15, color: 'red', tooltip: <p>{rows}</p> },
           { value: 50, color: 'orange', tooltip: 'Apple' },
-          { value: 29, color: 'grape', tooltip: 'Other' },
+          { value: 29, color: 'blue', tooltip: 'Other' },
         ]}
       />
     </Group>

@@ -106,3 +106,7 @@ td, th {
   padding: 8px;
 }
 
+.nav__bar__div {
+  background-color: #dddddd;
+  border: 1px solid black;
+}

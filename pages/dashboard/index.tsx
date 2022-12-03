@@ -15,17 +15,15 @@ export default function Listings() {
   return (
     <div>
         
-      <title>Listings - Money-Manager</title>
+      <title>Dashboard - Money-Manager</title>
       <Nav></Nav>
       <Space h="xl" />
-      <Center><h1 className='title'>Listings</h1></Center>
-      <Center><Yearmonthselect></Yearmonthselect></Center>
+      <Center><h1 className='title'>DASHBOARD</h1></Center>
       <Space h="xl" />
+      <Center><h1>Total $100.00</h1></Center>
+      <Center><h1>Income: $90.00</h1><Space w="xl"/><h1>Expense: $10.00</h1></Center>
 
-      <Tabledemo></Tabledemo>
-      <Space h="xl" />
-      <Add></Add>
-      <Space h="xl" />
+      
 
     </div>
   )
