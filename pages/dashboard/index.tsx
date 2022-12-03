@@ -8,7 +8,6 @@ import Add from '../components/buttonadd'
 import Homebutton from '../components/homebutton'
 import { Space } from '@mantine/core';
 import Nav from '../components/navbar'
-import Yearmonthselect from '../components/tableselectyearmonth'
 
 
 export default function Listings() {
@@ -33,7 +32,7 @@ export default function Listings() {
         .container {
             border-radius: 20px;
             border: 3px solid black;
-            width: 78%;
+            width: 85%;
             height: auto;
             background-color: #696969;
         }

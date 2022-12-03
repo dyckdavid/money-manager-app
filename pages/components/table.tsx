@@ -84,7 +84,3 @@ function Tabledemo() {
 
 export default Tabledemo;
 
-// Function that takes a string, checks if it contains a number, and returns a boolean
-function containsNumber(str: string) {
-    return /\d/.test(str);
-    }
