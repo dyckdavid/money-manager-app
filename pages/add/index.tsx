@@ -33,7 +33,7 @@ const AddListing = () => {
         
         const docRef = await addDoc(collectionRef, { ...add, timestamp: serverTimestamp() })
             setadd({ name: '', description: '', income: '', expense: ''})
-            alert(`Listing with id ${docRef.id} is added succesfully` )
+            
             setLoading(false)
             
 
