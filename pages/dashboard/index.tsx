@@ -20,6 +20,7 @@ export default function Listings() {
       <Nav></Nav>
       <Space h="xl" />
       <Center><h1 className='title'>DASHBOARD</h1></Center>
+      <Center><Yearselect></Yearselect></Center>
       <Space h="xl" />
       <Center><div className='container'>
       <Center><h2 className='total'>Total $253.00</h2></Center>
@@ -27,7 +28,6 @@ export default function Listings() {
 
 
       <Space h="xl" />
-      <Center><Yearselect></Yearselect></Center>
       <Space h="xl" />
       <Progress></Progress>
       
@@ -39,15 +39,17 @@ export default function Listings() {
         .container {
             border-radius: 20px;
             border: 3px solid black;
-            width: 85%;
-            height: auto;
+            width: 80%;
+            height: 170px;
             background-color: #696969;
         }
         .income {
-            color: green;
+            color: #006400;
+            font-size: 30px;
         }
         .expense {
             color: red;
+            font-size: 30px;
         }
         p {
           color: blue;
