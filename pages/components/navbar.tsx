@@ -4,7 +4,7 @@ import { Center } from '@mantine/core';
 import { createStyles } from '@mantine/core';
 import { Space } from '@mantine/core';
 import { Container } from '@mantine/core';
-
+import { useState } from 'react';
 import Burger from './navburger'
 import { redirect } from 'next/dist/server/api-utils';
 
@@ -26,7 +26,7 @@ const useStyles = createStyles((theme) => ({
   
       // Static media query
       '@media (max-width: 800px)': {
-        
+       
       },
 
 
@@ -36,6 +36,8 @@ const useStyles = createStyles((theme) => ({
 
 function Demo() {
     const { classes } = useStyles();
+    const [opened, setOpened] = useState(false);
+  const title = opened ? 'Close navigation' : 'Open navigation';
   return (
     <><>
       <div className='nav__bar__div'>
@@ -43,26 +45,27 @@ function Demo() {
 
         <Center>
           <Link href="/">
-            <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
+            <Button variant="light" radius="xs" size="sm" color="gray" compact className={classes.container}>
               Home
             </Button>
           </Link>
           <Link href="/listing">
-            <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
+            <Button variant="light" radius="xs" size="sm" color="gray" compact className={classes.container}>
               Manager
             </Button>
           </Link>
           <Link href="/dashboard">
-            <Button radius="xs" size="sm" color="gray" compact className={classes.container}>
+            <Button variant="light" radius="xs" size="sm" color="gray" compact className={classes.container}>
               Dashboard
             </Button>
           </Link>
 
-        </Center></div>
+        </Center>
+        </div>
     </><style jsx>{`
 
         .nav__bar__div {
-          background-color: grey;
+          background-color: #696969;
           border-bottom: 2px solid black;
           padding-bottom: 10px;
         }

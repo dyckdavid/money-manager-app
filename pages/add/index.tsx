@@ -16,7 +16,6 @@ import {
   import { Loader } from '@mantine/core';
 import { useState } from "react";
 import { Center } from "@mantine/core";
-import Nav from '../components/navbar';
 import Listingback from "../components/listingback";
 import React from 'react';
 
@@ -59,7 +58,6 @@ function SubmitButton(){
 
         
         <div>
-            <Nav></Nav>
       <Space h="xl" />
       
         <Listingback></Listingback>
