@@ -18,17 +18,29 @@ import { useState } from "react";
 import { Center } from "@mantine/core";
 import Nav from '../components/navbar';
 import Listingback from "../components/listingback";
+import React from 'react';
+
+
 
 
 const AddListing = () => {
+
+    const [Loading, setLoading] = useState(false)
     const [add, setadd] = useState({name: '', description: '', income: '', expense: ''})
     const onSubmit = async () => {
+        setLoading(true)
         const collectionRef = collection(db, "manager");
+        
         const docRef = await addDoc(collectionRef, { ...add, timestamp: serverTimestamp() })
             setadd({ name: '', description: '', income: '', expense: ''})
             alert(`Listing with id ${docRef.id} is added succesfully` )
+            setLoading(false)
+            
 
 }
+
+
+
 
     return (
         <div>
@@ -62,7 +74,7 @@ const AddListing = () => {
              onChange={e => setadd({...add, expense: e.target.value})}
              />
              <Space h={10}/>
-            <Center><Button onClick={onSubmit} sx={{ mt: 3 }}>Submit</Button></Center>
+            <Center><Button loading={Loading} onClick={onSubmit}  sx={{ mt: 3 }} >Submit</Button></Center>
         </div>
     )
 }

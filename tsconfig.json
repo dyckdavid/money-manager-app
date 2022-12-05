@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/components/nav.js", "pages/components/nav.js", "pages/index.tsx", "pages/index.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/components/nav.js", "pages/components/nav.js", "pages/index.tsx", "pages/index.tsx", "pages/testing/index.js"],
   "exclude": ["node_modules"]
 }
