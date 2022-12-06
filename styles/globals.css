@@ -133,7 +133,7 @@ nav{
   padding: 16px;
   justify-content: space-between;
   align-items: center;
-  background-color: #2f2f2f;
+  background-color: #f1f1f1;
 }
 .nav__menu-bar{
   display: flex;
@@ -158,13 +158,13 @@ nav{
   padding: 24px 16px;
   transition: all 0.2s;
   min-height: calc(100vh - 60px);
-  background-color: #2f2f2f;
+  background-color: #f1f1f1;
 }
 .nav__menu-list.active{
   right: 0;
 }
 .nav__link{
-  font-size: 15px; 
+  font-size: 18px; 
   position: relative;
   transition: all 0.2s;
 }

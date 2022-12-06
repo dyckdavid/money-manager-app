@@ -6,8 +6,8 @@ import NavItem from "./NavItem";
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
-  { text: "Manager", href: "/listing" },
-  { text: "Dashboard", href: "/dashboard" },
+  { text: "About Us", href: "/about" },
+  { text: "Contact", href: "/contact" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);
@@ -16,8 +16,10 @@ const Navbar = () => {
   return (
     <header>
       <nav className={`nav`}>
-        <Link href={"/"}>
-            <h1 className="logo">Money Manager</h1>
+        <Link href={"/"} legacyBehavior>
+          <a>
+            <h1 className="logo">CodeWithMarish</h1>
+          </a>
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}
