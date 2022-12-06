@@ -18,7 +18,7 @@ const Navbar = () => {
       <nav className={`nav`}>
         <Link href={"/"} legacyBehavior>
           <a>
-            <h1 className="logo">CodeWithMarish</h1>
+            <h1 className="logo">Money-Manager</h1>
           </a>
         </Link>
         <div
