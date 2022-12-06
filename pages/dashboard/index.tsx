@@ -4,18 +4,19 @@ import styles from '../styles/Home.module.css';
 import Link from "next/link";
 import Tabledemo from '../components/table'
 import { Center } from '@mantine/core';
-import Add from '../components/buttonadd'
-import Homebutton from '../components/homebutton'
+import Add from '../components/buttonadd';
+import Homebutton from '../components/homebutton';
 import { Space } from '@mantine/core';
 import Yearselect from '../components/homeselectyear';
-import Progress from '../../pages/components/ringprogress'
-
+import Progress from '../../pages/components/ringprogress';
+import Nav from '../components/navbar';
 
 export default function Listings() {
   return (
     <div>
         
       <title>Dashboard - Money-Manager</title>
+      <Nav></Nav>
       <Space h="xl" />
       <Center><h1 className='title'>DASHBOARD</h1></Center>
       <Center><Yearselect></Yearselect></Center>

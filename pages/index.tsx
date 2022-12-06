@@ -11,6 +11,7 @@ import Homebutton from './components/homebutton'
 import Progress from './components/ringprogress'
 import Yearselect from './components/homeselectyear'
 import { createStyles } from '@mantine/core';
+import Nav from './components/navbar';
 
 
 
@@ -23,6 +24,7 @@ export default function Home() {
     <div>
       
       <title>Money-Manager</title>
+      <Nav></Nav>
       <Center>
       <h1 className='title'>Money Managing APP</h1>
       </Center>

@@ -18,6 +18,11 @@ import { useState } from "react";
 import { Center } from "@mantine/core";
 import Listingback from "../components/listingback";
 import React from 'react';
+import { ActionIcon } from '@mantine/core';
+import { IconSettings } from '@tabler/icons';
+import Nav from '../components/navbar';
+import Link from 'next/link';
+
 
 
 
@@ -58,9 +63,11 @@ function SubmitButton(){
 
         
         <div>
+            <Nav></Nav>
       <Space h="xl" />
       
-        <Listingback></Listingback>
+        <Listingback></Listingback><Space w="xs" /><Center><Link href="/add/settings"><ActionIcon variant="filled"><IconSettings size={16} /></ActionIcon></Link></Center>
+
         <Space w="md" />
         
       
