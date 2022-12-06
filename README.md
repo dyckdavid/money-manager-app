@@ -1,2 +1,2 @@
 # Money App
-An app for managing your expenses.
+An app for managing your expenses & Incomes.
