@@ -68,9 +68,9 @@ const [selecting] = useState({income: '', expense: ''})
 function IsorNot() {
    
     if (add.income){
-        return <Button>Not hidden</Button>
+        return <Button>Not hidden.</Button>
     } else {
-        return <Button>Is hidden</Button>
+        return <Button>Is hidden.</Button>
     }
 
     
