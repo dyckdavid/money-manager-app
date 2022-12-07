@@ -62,7 +62,6 @@ function Tabledemo() {
     return (<Table style={{ marginLeft: 'auto', marginRight: 'auto' }} className={classes.container} striped highlightOnHover withBorder>
       <thead>
         <tr>
-          <th>ID</th>
           <th>Description</th>
           <th>Income</th>
           <th>Expense</th>
@@ -71,7 +70,6 @@ function Tabledemo() {
         <tbody>
             {data.map((item: DocumentData) => (
                 <tr key={item.id}>
-                <th>{item.id}</th>
                 <th>{item.description}</th>
                 <th>{item.income}</th>
                 <th>{item.expense}</th>

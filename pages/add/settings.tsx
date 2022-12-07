@@ -21,6 +21,8 @@ export default function Settings() {
       <title>Money-Manager</title>
       <Nav></Nav>
       <Space h="xl" />
+      <Center><h1 className='title'>SETTINGS</h1></Center>
+
     </div>
   )
 }

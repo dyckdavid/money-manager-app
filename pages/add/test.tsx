@@ -10,6 +10,8 @@ import {
     collection,
     addDoc,
     serverTimestamp,
+    DocumentData,
+    getDocs,
   } from "firebase/firestore";
   import { db } from "../../firebase/clientApp";
   import { useForm } from "@mantine/form";
@@ -23,6 +25,7 @@ import { IconSettings } from '@tabler/icons';
 import Nav from '../components/navbar';
 import Link from 'next/link';
 import { Select } from '@mantine/core';
+import { useEffect } from 'react';
 
 
 
@@ -31,6 +34,8 @@ import { Select } from '@mantine/core';
 const AddListing = () => {
     const [Loading, setLoading] = useState(false)
     const [Disabled, setDisable] = useState(false)
+
+
     
     const [add, setadd] = useState({name: '', description: '', income: '', expense: ''})
     const onSubmit = async () => {
@@ -44,11 +49,7 @@ const AddListing = () => {
             setLoading(false)
             setDisable(false)
             
-            
-
-}
-
-
+    }
 
 
 
@@ -60,6 +61,25 @@ function SubmitButton(){
       return <Button loading={Loading} onClick={onSubmit} sx={{ mt: 3 }} disabled >Submit</Button>
     };
 };
+
+
+
+const [selecting] = useState({income: '', expense: ''})
+function IsorNot() {
+   
+    if (add.income){
+        return <Button>Not hidden</Button>
+    } else {
+        return <Button>Is hidden</Button>
+    }
+
+    
+}
+
+
+
+
+
 
     return (
 
@@ -85,16 +105,7 @@ function SubmitButton(){
              value={add.description} 
              onChange={e => setadd({...add, description: e.target.value})}
              />
-             <Select
-             style={{ width: 400, marginLeft: "auto", marginRight: "auto" }}
-            label="Income or Expense"
-            placeholder="Income, Expense"
-            data={[
-                { value: 'income', label: 'INCOME' },
-                { value: 'expense', label: 'EXPENSE' },
-                
-            ]}
-            />
+            <IsorNot></IsorNot>
              <TextInput label="Income"
             style={{ width: 400, marginLeft: "auto", marginRight: "auto" }}
              value={add.income} 
