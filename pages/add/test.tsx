@@ -64,7 +64,7 @@ function SubmitButton(){
 
 
 
-const [selecting] = useState({income: '', expense: ''})
+const [selecting, setselecting] = useState({income: '', expense: ''})
 function IsorNot() {
    
     if (add.income){
@@ -72,6 +72,8 @@ function IsorNot() {
     } else {
         return <Button>Is hidden.</Button>
     }
+
+    setselecting({income: "", expense: ""})
 
     
 }
