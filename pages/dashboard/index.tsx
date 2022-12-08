@@ -39,7 +39,7 @@ export default function Listings() {
             border-radius: 20px;
             border: 3px solid black;
             width: 80%;
-            height: 170px;
+            height: auto;
             background-color: #696969;
         }
         .income {
