@@ -23,6 +23,7 @@ import { IconSettings } from '@tabler/icons';
 import Nav from '../components/navbar';
 import Link from 'next/link';
 import { Select } from '@mantine/core';
+import Selecting from '../components/selectincomeexpense'
 
 
 
@@ -74,6 +75,7 @@ function SubmitButton(){
         
       
       <Center><h1 className='title'>ADD LISTING</h1></Center>
+      <Center><Selecting></Selecting></Center>
             
             <TextInput label="Name"
             style={{ width: 400, marginLeft: "auto", marginRight: "auto" }}
