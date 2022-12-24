@@ -64,19 +64,37 @@ function SubmitButton(){
 
 
 
-const [selecting, setselecting] = useState({income: '', expense: ''})
-function IsorNot() {
-   
-    if (add.income){
-        return <Button>Not hidden.</Button>
-    } else {
-        return <Button>Is hidden.</Button>
-    }
 
-    setselecting({income: "", expense: ""})
+function IsorNot() {
+
+
+  return (
+    <h1>hello</h1>
+  );
 
     
 }
+
+function HideOrNot() {
+  
+  return (
+    <>
+    <Select
+      label="Your favorite framework/library"
+      placeholder="Pick one"
+      data={[
+        { value: 'income', label: 'React' },
+        { value: 'expense', label: 'Angular' },
+      ]}
+    />
+    <Button id="income" className="income">Income</Button>
+    <Button id="expense" className="expense">Expense</Button>
+    </>
+
+  );
+}
+
+
 
 
 
@@ -90,7 +108,7 @@ function IsorNot() {
             <Nav></Nav>
       <Space h="xl" />
       
-        <Listingback></Listingback><Space w="xs" /><Center><Link href="/add/settings"><ActionIcon variant="filled"><IconSettings size={16} /></ActionIcon></Link></Center>
+        <Space w="xs" /><Center><Link href="/add/settings"><ActionIcon variant="filled"><IconSettings size={36} /></ActionIcon></Link></Center>
 
         <Space w="md" />
         

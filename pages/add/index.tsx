@@ -85,16 +85,6 @@ function SubmitButton(){
              value={add.description} 
              onChange={e => setadd({...add, description: e.target.value})}
              />
-             <Select
-             style={{ width: 400, marginLeft: "auto", marginRight: "auto" }}
-            label="Income or Expense"
-            placeholder="Income, Expense"
-            data={[
-                { value: 'income', label: 'INCOME' },
-                { value: 'expense', label: 'EXPENSE' },
-                
-            ]}
-            />
              <TextInput label="Income"
             style={{ width: 400, marginLeft: "auto", marginRight: "auto" }}
              value={add.income} 
