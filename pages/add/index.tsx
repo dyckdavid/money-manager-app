@@ -74,7 +74,7 @@ function SubmitButton(){
         <Space w="md" />
         
       
-      <Center><h1 className='title'>ADD LISTING</h1></Center>
+      <Center><h1 className='title'>ADD LISTINGS</h1></Center>
       <Center><Selecting></Selecting></Center>
             
             <TextInput label="Name"
