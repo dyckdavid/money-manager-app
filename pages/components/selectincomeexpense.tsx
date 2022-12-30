@@ -18,8 +18,8 @@ function select() {
   return (
     <NativeSelect
     className={classes.container}
-      data={['Income', 'Expense']}
-      description=" Select Income or Expense"
+      data={['Select', 'Income', 'Expense']}
+      description=" Select an Income or Expense"
       variant="filled"
       radius="lg"
       size="lg"
