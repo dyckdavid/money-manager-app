@@ -66,7 +66,7 @@ function Demo() {
 
         .nav__bar__div {
           background-color: #696969;
-          border-bottom: 2px solid black;
+          border-bottom: 3px solid black;
           padding-bottom: 10px;
         }
       `}</style></>
