@@ -99,9 +99,8 @@ if (addexpense.nameexpense && addexpense.descriptionexpense && addexpense.expens
   // Declare a state variable for the income text field
   const [income, setIncome] = useState('');
 
-  const [expense, setExpense] = useState('');
-
   // Declare a state variable for the expense text field
+  const [expense, setExpense] = useState('');
 
   // Function to handle changes to the select element
   function handleOptionChange(event: { target: { value: React.SetStateAction<string>; }; }) {
@@ -113,13 +112,10 @@ if (addexpense.nameexpense && addexpense.descriptionexpense && addexpense.expens
     setIncome(event.target.value);
   }
 
-    // Function to handle changes to the income text field
-    function handleExpenseChange(event: { target: { value: React.SetStateAction<string>; }; }) {
-      setExpense(event.target.value);
-    }
-
-
-
+  // Function to handle changes to the expense text field
+  function handleExpenseChange(event: { target: { value: React.SetStateAction<string>; }; }) {
+    setExpense(event.target.value);
+  }
   
 
   return (
@@ -155,17 +151,17 @@ if (addexpense.nameexpense && addexpense.descriptionexpense && addexpense.expens
         <><TextInput label="Name"
         style={{ width: 400, marginLeft: "auto", marginRight: "auto" }}
          value={addexpense.nameexpense}
-         onChange={e => setadd({...addexpense, nameexpense: e.target.value})}
+         onChange={e => setaddexpense({...addexpense, nameexpense: e.target.value})}
          />
         <TextInput label="Description"
         style={{ width: 400, marginLeft: "auto", marginRight: "auto" }}
          value={addexpense.descriptionexpense} 
-         onChange={e => setadd({...addexpense, descriptionexpense: e.target.value})}
+         onChange={e => setaddexpense({...addexpense, descriptionexpense: e.target.value})}
          />
          <TextInput label="Expense"
         style={{ width: 400, marginLeft: "auto", marginRight: "auto" }}
          value={addexpense.expense} 
-         onChange={e => setadd({...addexpense, expense: e.target.value})}
+         onChange={e => setaddexpense({...addexpense, expense: e.target.value})}
          />
          <Space h={10}/>
             <Center><SubmitButtonExpense></SubmitButtonExpense></Center></>
